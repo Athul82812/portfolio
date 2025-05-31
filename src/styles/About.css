@@ -1,0 +1,29 @@
+/* About.css */
+
+.about {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #282c34;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;  /* makes it round */
+  object-fit: cover;   /* keeps aspect ratio */
+  margin-bottom: 1rem;
+  border: 3px solid #61dafb; /* optional styling */
+}
