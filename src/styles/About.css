@@ -1,29 +1,54 @@
 /* About.css */
 
 .about {
-  max-width: 700px;
-  margin: 3rem auto;
+  max-width: 900px;
+  margin: 4rem auto;
   padding: 0 1rem;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.6s ease-in-out;
 }
 
 .about h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #282c34;
+  font-weight: 700;
+  position: relative;
+}
+
+.about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #61dafb;
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 3px solid #61dafb;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
 }
 
 .about p {
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #444;
-}
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;  /* makes it round */
-  object-fit: cover;   /* keeps aspect ratio */
-  margin-bottom: 1rem;
-  border: 3px solid #61dafb; /* optional styling */
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease-in-out;
 }
