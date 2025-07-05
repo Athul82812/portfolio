@@ -7,7 +7,7 @@ function About() {
       <h2>About Me</h2>
 
 
-      <img src="/assets/images/CR7.jpg" alt="Athul Krishna" className="profile-photo" />
+      <img src={process.env.PUBLIC_URL + "/assets/images/CR7.jpg"} alt="Athul Krishna" className="profile-photo" />
 
      
      

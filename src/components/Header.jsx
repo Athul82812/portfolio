@@ -15,14 +15,16 @@ function Header() {
       className="header"
       id="resume"
       style={{
-        background: "url('/assets/images/portfoliobackground.jpg') center/cover no-repeat",
-      }}
+   background: `url(${process.env.PUBLIC_URL}/assets/images/portfoliobackground.jpg) center/cover no-repeat`,
+  backgroundColor: "#333",
+}}
+
     >
-      <div className="overlay"></div>
+      <div className="overlay"></div>  
       <nav className="navbar">
         <div className="logo-container">
           <img
-            src="/assets/images/logo.png"
+            src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
             alt="Athul Krishna Logo"
             className="logo-img"
           />
