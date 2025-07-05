@@ -13,14 +13,12 @@ function Header() {
   return (
     <header
       className="header"
-      id="resume"
       style={{
-   background: `url(${process.env.PUBLIC_URL}/assets/images/portfoliobackground.jpg) center/cover no-repeat`,
-  backgroundColor: "#333",
-}}
-
+        background: `url(${process.env.PUBLIC_URL}/assets/images/portfoliobackground.jpg) center/cover no-repeat`,
+        backgroundColor: "#333",
+      }}
     >
-      <div className="overlay"></div>  
+      <div className="overlay"></div>
       <nav className="navbar">
         <div className="logo-container">
           <img
@@ -41,7 +39,13 @@ function Header() {
             <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#resume">Resume</a>
+            <a
+              href={process.env.PUBLIC_URL + "/assets/docs/Athul_Krishna_cv.pdf"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -69,7 +73,7 @@ function Header() {
           />
 
           <a
-            href="/assets/docs/Athul_Krishna_cv.pdf"
+            href={process.env.PUBLIC_URL + "/assets/docs/Athul_Krishna_cv.pdf"}
             download
             className="resume-btn"
           >
